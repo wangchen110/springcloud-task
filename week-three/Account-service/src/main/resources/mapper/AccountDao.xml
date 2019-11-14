@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.Account.dao.AccountDao">
+
+
+    <select id="list" resultType="com.springboot.Account.domain.Account">
+        select a.*,b.tname as type from account a left join Account_detail b on a.types = b.id
+        <where>
+            <if test="created!=null">
+                a.created &gt;= #{created}
+            </if>
+            <if test="endtime!=null">
+                and a.created &lt;= #{endtime}
+            </if>
+        </where>
+    </select>
+
+
+    <select id="getExpenditurePrice" resultType="Integer">
+        select sum(a.price) from account a left join Account_detail b on a.types = b.id
+        <where>
+            <if test="true">
+                b.typeId=#{id}
+            </if>
+            <if test="account.created!=null">
+               and a.created &gt;= #{account.created}
+            </if>
+            <if test="account.endtime!=null">
+                and a.created &lt;= #{account.endtime}
+            </if>
+        </where>
+    </select>
+</mapper>

@@ -1,0 +1,32 @@
+server:
+  port: 8081
+
+
+spring:
+  application:
+    name: account-service
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/practice?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123
+    driver-class-name: com.mysql.jdbc.Driver
+    main:
+      allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
+  jackson:
+    date-format: yyyy-MM-dd
+
+file:
+  path: D:\picture\
+
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+
+logging:
+  level:
+    com.springboot.Account.dao: debug
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+    fetch-registry: false #不从注册中心拉取注册表

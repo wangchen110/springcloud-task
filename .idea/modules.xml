@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/week-three/Account-GateWay/Account-GateWay.iml" filepath="$PROJECT_DIR$/week-three/Account-GateWay/Account-GateWay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week-three/Account-service/Account-service.iml" filepath="$PROJECT_DIR$/week-three/Account-service/Account-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week-three/Account-vue/Account-vue.iml" filepath="$PROJECT_DIR$/week-three/Account-vue/Account-vue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-project/o2o-api/o2o-api.iml" filepath="$PROJECT_DIR$/order-project/o2o-api/o2o-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-project/o2o-eurekaServer/o2o-eurekaServer.iml" filepath="$PROJECT_DIR$/order-project/o2o-eurekaServer/o2o-eurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-project/order-project.iml" filepath="$PROJECT_DIR$/order-project/order-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-project/order-service/order-service.iml" filepath="$PROJECT_DIR$/order-project/order-service/order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proxy/proxy.iml" filepath="$PROJECT_DIR$/proxy/proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week-three/week-three.iml" filepath="$PROJECT_DIR$/week-three/week-three.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week-three/weekThree-server/weekThree-server.iml" filepath="$PROJECT_DIR$/week-three/weekThree-server/weekThree-server.iml" />
+    </modules>
+  </component>
+</project>

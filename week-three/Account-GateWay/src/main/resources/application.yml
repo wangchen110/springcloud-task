@@ -1,0 +1,23 @@
+server:
+  port: 10010
+
+spring:
+  application:
+    name: account-gateway
+
+zuul:
+  #  ignored-services: '*' # 表示我们忽略所有默认匹配的path
+  routes:
+    account-service:
+      path: /account-service/**
+      serviceId: account-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka

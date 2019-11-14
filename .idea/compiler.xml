@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Account-GateWay" />
+        <module name="Account-service" />
+        <module name="o2o-api" />
+        <module name="o2o-eurekaServer" />
+        <module name="order-service" />
+        <module name="proxy" />
+        <module name="weekThree-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Account-GateWay" target="1.8" />
+      <module name="Account-service" target="1.8" />
+      <module name="o2o-api" target="1.8" />
+      <module name="o2o-eurekaServer" target="1.8" />
+      <module name="order-project" target="1.8" />
+      <module name="order-service" target="1.8" />
+      <module name="proxy" target="1.8" />
+      <module name="week-three" target="1.8" />
+      <module name="weekThree-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
